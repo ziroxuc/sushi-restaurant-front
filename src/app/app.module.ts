@@ -1,12 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
+
+//router
+//import { APP_ROUTING } from './app.router';
+
+
+//services
+
+import { ProductosService } from './services/productos.service'
 
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { BodyComponent } from './body/body.component';
-import { CarouselComponent } from './carousel/carousel.component';
+import { HomeComponent } from './home/home.component';
+
 
 
 @NgModule({
@@ -14,13 +23,17 @@ import { CarouselComponent } from './carousel/carousel.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    BodyComponent,
-    CarouselComponent
+    HomeComponent,
+    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    //APP_ROUTING,
+    HttpModule
   ],
-  providers: [],
+  providers: [
+    ProductosService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

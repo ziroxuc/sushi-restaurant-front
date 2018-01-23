@@ -1,0 +1,24 @@
+{
+    "productos": [
+        {
+            "nombre": "sushi-1",
+            "precio": "2300",
+            "descripcion": "Tempura roll envuelto en palta"
+        },
+        {
+            "nombre": "sushi-2",
+            "precio": "2800",
+            "descripcion": "Tempura roll envuelto en salmon"
+        },
+        {
+            "nombre": "sushi-3",
+            "precio": "5600",
+            "descripcion": "Tempura roll envuelto en camarón"
+        },
+        {
+            "nombre": "sushi-4",
+            "precio": "3750",
+            "descripcion": "Tempura roll envuelto en camarónTempura roll envuelto en camarónTempura roll envuelto en camarón"
+        }
+    ]
+}
