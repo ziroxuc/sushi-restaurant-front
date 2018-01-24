@@ -1,24 +1,48 @@
 {
     "productos": [
         {
-            "nombre": "sushi-1",
-            "precio": "2300",
-            "descripcion": "Tempura roll envuelto en palta"
+            "id_sushi": 1,
+            "nombre": "sushii-1",
+            "precio": 2300,
+            "piezas": 8,
+            "descripcion": "Tempura roll envuelto en palta",
+            "img": "../../../assets/images/product-images/11.jpg",
+            "create_date": "21-01-2018",
+            "mod_date": null,
+            "estado": 1
         },
         {
+            "id_sushi": 2,
             "nombre": "sushi-2",
-            "precio": "2800",
-            "descripcion": "Tempura roll envuelto en salmon"
+            "precio": 3300,
+            "piezas": 8,
+            "descripcion": "Tempura roll envuelto en palta",
+            "img": "../../../assets/images/product-images/11.jpg",
+            "create_date": "21-01-2018",
+            "mod_date": null,
+            "estado": 1
         },
         {
+            "id_sushi": 3,
             "nombre": "sushi-3",
-            "precio": "5600",
-            "descripcion": "Tempura roll envuelto en camarón"
+            "precio": 3300,
+            "piezas": 8,
+            "descripcion": "Tempura roll envuelto en palta",
+            "img": "../../../assets/images/product-images/11.jpg",
+            "create_date": "21-01-2018",
+            "mod_date": null,
+            "estado": 1
         },
         {
-            "nombre": "sushi-4",
-            "precio": "3750",
-            "descripcion": "Tempura roll envuelto en camarónTempura roll envuelto en camarónTempura roll envuelto en camarón"
+            "id_sushi": 4,
+            "nombre": "sushi-1",
+            "precio": 4300,
+            "piezas": 8,
+            "descripcion": "Tempura roll envuelto en palta",
+            "img": "../../../assets/images/product-images/11.jpg",
+            "create_date": "21-01-2018",
+            "mod_date": null,
+            "estado": 1
         }
     ]
 }

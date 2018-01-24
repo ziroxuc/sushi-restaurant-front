@@ -53,19 +53,19 @@
         </div>
         <!-- Customer Service Ends -->
         <!-- Contact Us Starts -->
-        <div class="col-md-4 col-sm-4 col-xs-12 last">
-          <h5>Contact Us</h5>
+        <div class="col-md-4 col-sm-4 col-xs-12 last" *ngIf="_infoWeb.cargada">
+          <h5>Contacto</h5>
           <ul>
-            <li>My Company</li>
+            <li>{{_infoWeb.infoWeb.nombreApp}}</li>
             <li>
-              1247 LB Nagar Road, Hyderabad, Telangana - 35
+                {{_infoWeb.infoWeb.direccion}}
             </li>
             <li>
-              Email: <a href="#">info@demolink.com</a>
+              Email: <a href="#">{{_infoWeb.infoWeb.mail}}</a>
             </li>
           </ul>
           <h4 class="lead">
-            Tel: <span>1(234) 567-9842</span>
+            Tel: <span>{{_infoWeb.infoWeb.telefono}}</span>
           </h4>
         </div>
         <!-- Contact Us Ends -->
@@ -81,7 +81,7 @@
     <div class="container">
       <!-- Starts -->
       <p class="pull-left">
-        &copy; 2017 Food Bingo Stores. Designed By <a href="http://sainathchillapuram.com">Sainath Chillapuram</a>
+        &copy; {{this.anio}} Food Bingo Stores. Designed By <a href="http://sainathchillapuram.com">Sainath Chillapuram</a>
       </p>
       <!-- Ends -->
       <!-- Payment Gateway Links Starts -->

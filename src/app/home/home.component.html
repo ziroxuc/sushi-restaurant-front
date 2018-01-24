@@ -31,29 +31,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div id="main-container" class="container">
 
   <!-- Two Column Banner Starts -->
@@ -85,16 +62,17 @@
         <div class="row">
           <!-- Product #1 Starts -->
           <div class="col-sm-3 col-xs-12" *ngFor="let item of this.productos">
+
             <div class="product-col alt">
               <div class="image">
-                <img src="../../../assets/images/product-images/11.jpg" alt="product" class="img-responsive">
+                <img src="{{item.img}}" alt="product" class="img-responsive">
               </div>
               <div class="caption">
                 <div class="price">
                   <span class="price-new">${{item.precio}}</span>
                   <span class="price-old">$249.50</span>
                 </div>
-                <p class="price-tax">{{item.descripcion | lowercase}}</p>
+                <p class="price-tax">{{item.descripcion}}</p>
                 <h4>
                   <a href="product.html">{{item.nombre}} </a>
                 </h4>
@@ -109,7 +87,7 @@
                   </span>
                 </div>
                 <div class="cart-button button-group">
-                  <button type="button" class="btn btn-cart">
+                  <button type="button" class="btn btn-cart" (click)="ccService.addCarrito(item)">
                     <i class="fa fa-shopping-cart"></i>
                   </button>
                   <button type="button" title="Wishlist" class="btn btn-wishlist">
